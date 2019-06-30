@@ -10,6 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    height: 85vh;
 }
 
 button.num-btn {
@@ -118,9 +119,10 @@ button:active {
     display: flex;
     justify-content: center;
     bottom: 0;
-    position: fixed;
+    align-self: flex-end;
     width: 100%;
     background: #ffae17;
+    position: absolute;
 }
 
 .display {
