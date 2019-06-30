@@ -1,0 +1,146 @@
+body{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    background: #0c0018;
+    color: #ffffff;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+button.num-btn {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    border: none;
+    width: 33.33vw;
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: #0c0018;
+    color: #ffffff;
+    font-size: 2vw;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 8vw;
+}
+
+button.operation-btn {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    border: none;
+    width: 15vw;
+    height: 15vh;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: #ffae17;
+    color: #ffffff;
+    font-size: 2vw;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 8vw;
+}
+
+button.result-btn {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    border: none;
+    width: 15vw;
+    height: 15vh;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: #ffae17;
+    color: #ffffff;
+    font-size: 2vw;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 8vw;
+}
+
+button.clear-btn {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    border: none;
+    width: 25vw;
+    height: 15vh;
+    font-size: 6vw;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: #ffae17;
+    color: #0c0018;
+    font-size: 7vw;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:active {
+    background: #310063;
+    color: #ffed86;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:active {
+    transform: scale(0.90);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-attachment: fixed;
+    background: #ffae17;
+}
+
+.display {
+    display: block;
+    width: 100vw;
+    height: 21vh;
+    font-size: 15vh;
+    text-align: right;
+    align-content: center;
+    line-height: 21vh;
+}
+
+.operator-icon {
+    display: block;
+    height: 4vh;
+    width: 100vw;
+    font-size: 4vh;
+    text-align: left;
+    left: 2vw;
+    align-content: center;
+    position: fixed;
+}
