@@ -59,6 +59,7 @@ disableBtns();
 
 operateBtns.forEach(btn =>
   btn.addEventListener("click", function() {
+    resultBtn.style.background = '#ffae17';
     document.querySelector('.operator-icon').textContent = btn.textContent;
     disableOperateBtns(btn);
     selectedOperation = btn.id;
@@ -69,6 +70,7 @@ operateBtns.forEach(btn =>
 let timer = null;
 numBtns.forEach(btn =>
   btn.addEventListener("click", function() {
+    resultBtn.style.background = '#ffae17';
     if (document.getElementsByClassName("show-result").length === 1) {
       display.textContent = "";
       display.classList.remove("show-result");
@@ -104,6 +106,7 @@ const showResult = () => {
 
 resultBtn = document.querySelector(".result-btn");
 resultBtn.addEventListener("click", function() {
+  resultBtn.style.background = '#310063';
   showResult();
 });
 
