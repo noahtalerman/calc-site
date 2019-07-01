@@ -131,3 +131,6 @@ numBtns.forEach(btn => btn.addEventListener('touchend', function() {
     btn.style.color = '#ffffff';
     btn.style.transform = 'scale(1)';
 }));
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);

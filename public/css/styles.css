@@ -2,6 +2,7 @@ body{
     display: flex;
     justify-content: flex-start;
     margin: 0;
+    height: calc(var(--vh, 1vh) * 100);
     background: #0c0018;
     color: #ffffff;
 }
@@ -18,7 +19,7 @@ button.num-btn {
     display: inline-block;
     border: none;
     width: 33.33vw;
-    height: 20vh;
+    height: 100%;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -39,7 +40,7 @@ button.operation-btn {
     display: inline-block;
     border: none;
     width: 15vw;
-    height: 15vh;
+    height: 100%;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -60,7 +61,7 @@ button.result-btn {
     display: inline-block;
     border: none;
     width: 15vw;
-    height: 15vh;
+    height: 100%;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -81,7 +82,7 @@ button.clear-btn {
     display: inline-block;
     border: none;
     width: 25vw;
-    height: 15vh;
+    height: 100%;
     font-size: 6vw;
     padding: 0;
     margin: 0;
@@ -128,7 +129,7 @@ button:active {
 .display {
     display: block;
     width: 100vw;
-    height: 21vh;
+    height: 21%;
     font-size: 15vh;
     text-align: right;
     align-content: center;
@@ -137,11 +138,23 @@ button:active {
 
 .operator-icon {
     display: block;
-    height: 4vh;
+    height: 100%;
     width: 100vw;
     font-size: 4vh;
     text-align: left;
     left: 2vw;
     align-content: center;
     position: fixed;
+}
+
+.row-1 {
+    height: 30%;
+}
+
+.row-2, .row-3, .row-4 {
+    height: 20%;
+}
+
+.row-5 {
+    height: 15%;
 }
