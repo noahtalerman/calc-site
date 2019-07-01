@@ -118,6 +118,7 @@ const clear = () => {
 }
 
 document.querySelector('.clear-btn').addEventListener('click', function() {
+    resultBtn.style.background = '#ffae17';
     clear();
 })
 
