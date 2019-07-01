@@ -51,7 +51,7 @@ button.operation-btn {
                 transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
-    font-size: 8vh;
+    font-size: 5vh;
 }
 
 button.result-btn {
@@ -71,7 +71,7 @@ button.result-btn {
                 transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
-    font-size: 8vh;
+    font-size: 5vh;
 }
 
 button.clear-btn {
@@ -80,7 +80,7 @@ button.clear-btn {
     border: none;
     width: 25vw;
     height: 100%;
-    font-size: 6vh;
+    font-size: 4vh;
     padding: 0;
     margin: 0;
     text-decoration: none;
