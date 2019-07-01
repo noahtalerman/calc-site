@@ -98,7 +98,7 @@ button.clear-btn {
     -moz-appearance: none;
 }
 
-button:active {
+button.num-btn:active {
     background: #310063;
     color: #ffed86;
 }
