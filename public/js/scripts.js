@@ -121,6 +121,7 @@ const clear = () => {
     num2 = null;
     result = null;
     display.textContent = '';
+    document.querySelector('.running-total').textContent = "";
 }
 
 document.querySelector('.clear-btn').addEventListener('click', function() {
