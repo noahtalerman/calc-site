@@ -137,9 +137,11 @@ numBtns.forEach(btn => btn.addEventListener('touchstart', function() {
 
 numBtns.forEach(btn => btn.addEventListener('touchend', function() {
   if (btn.disabled == false) {
-    btn.style.background = '#0c0018';
-    btn.style.color = '#ffffff';
-    btn.style.transform = 'scale(1)';
+    setTimeout(function() {
+      btn.style.background = '#0c0018';
+      btn.style.color = '#ffffff';
+      btn.style.transform = 'scale(1)';
+    }, 250);
   }
 }));
 
