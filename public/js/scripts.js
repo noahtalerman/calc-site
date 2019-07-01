@@ -35,10 +35,10 @@ const operate = (a, b) => {
 let numBtns = document.querySelectorAll(".num-btn");
 let operateBtns = document.querySelectorAll(".operation-btn");
 let display = document.querySelector(".display");
-let selectedOperation = null;
-let num1 = null;
-let num2 = null;
-let result = null;
+let selectedOperation = undefined;
+let num1 = undefined;
+let num2 = undefined;
+let result = undefined;
 
 const disableBtns = () => {
     numBtns.forEach(btn => btn.disabled = true);
@@ -89,9 +89,9 @@ numBtns.forEach(btn =>
   btn.addEventListener("click", function() {
     resultBtn.style.background = '#ffae17';
     if (display.textContent === "Error") {
-      num1 = null;
-      num2 = null;
-      result = null;
+      num1 = undefined;
+      num2 = undefined;
+      result = undefined;
     }
     if (document.getElementsByClassName("show-result").length === 1) {
       display.textContent = "";
@@ -105,7 +105,7 @@ numBtns.forEach(btn =>
     timer = setTimeout(function() {
       if (
         document.getElementsByClassName("second-num").length === 0 &&
-        num1 == null
+        num1 == undefined
       ) {
         num1 = Number(display.textContent);
       } else {
@@ -113,7 +113,7 @@ numBtns.forEach(btn =>
       }
       display.textContent = "";
       display.classList.toggle("second-num");
-      if (num2 !== null) {
+      if (!isNaN(num2)) {
         result = operate(num1, num2);
         num1 = result;
         document.querySelector('.running-total').textContent = result;
@@ -138,9 +138,9 @@ resultBtn.addEventListener("click", function() {
 });
 
 const clear = () => {
-    num1 = null;
-    num2 = null;
-    result = null;
+    num1 = undefined;
+    num2 = undefined;
+    result = undefined;
     display.textContent = '';
     document.querySelector('.running-total').textContent = "";
 }
