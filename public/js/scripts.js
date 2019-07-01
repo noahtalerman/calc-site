@@ -149,7 +149,7 @@ window.addEventListener('resize', () => {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-window.addEventListener('touchstart', function() {
+document.addEventListener('touchstart', function() {
   if (numBtns.disabled == true) {
     operateBtns.style.background = 'red';
     setTimeout(function() {
