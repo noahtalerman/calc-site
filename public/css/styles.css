@@ -91,13 +91,13 @@ button.clear-btn {
     font-size: 7vw;
     cursor: pointer;
     text-align: center;
-    transition: all 250ms ease-in-out, 
-                transform 150ms ease;
+    transition: all 0.5 ease-in-out, 
+                transform 0.25s ease;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
-button:hover {
+button:active {
     background: #310063;
     color: #ffed86;
 }
@@ -106,7 +106,7 @@ button:focus {
     outline: 0;
 }
 
-button:hover {
+button:active {
     transform: scale(0.90);
 }
 
