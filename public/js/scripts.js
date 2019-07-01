@@ -119,18 +119,23 @@ document.querySelector('.clear-btn').addEventListener('click', function() {
 })
 
 // touch events
-
-numBtns.forEach(btn => btn.addEventListener('touchstart', function() { 
+numBtns.forEach(btn => btn.addEventListener('touchstart', function() {
+  if (btn.disabled == false) { 
     btn.style.background = '#310063';
     btn.style.color = '#ffed86';
-    btn.style.transform = 'scale(0.90)';
+    btn.style.transform = 'scale(0.80)';
+  }
 }));
 
 numBtns.forEach(btn => btn.addEventListener('touchend', function() {
+  if (btn.disabled == false) {
     btn.style.background = '#0c0018';
     btn.style.color = '#ffffff';
     btn.style.transform = 'scale(1)';
+  }
 }));
 
+
+// viewport sizing
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
