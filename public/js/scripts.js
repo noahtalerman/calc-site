@@ -124,6 +124,10 @@ numBtns.forEach(btn => btn.addEventListener('touchstart', function() {
     btn.style.background = '#310063';
     btn.style.color = '#ffed86';
     btn.style.transform = 'scale(0.80)';
+    operateBtns.background = 'red';
+    setTimeout(function() {
+      operateBtns.style.background = "#ffae17";
+    }, 250)
   } else {
     btn.style.background = '#0c0018';
     btn.style.color = 'red';
