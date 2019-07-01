@@ -125,7 +125,9 @@ numBtns.forEach(btn => btn.addEventListener('touchstart', function() {
     btn.style.color = '#ffed86';
     btn.style.transform = 'scale(0.80)';
   } else {
-    return;
+    btn.style.background = '#0c0018';
+    btn.style.color = '#ffffff';
+    btn.style.transform = 'scale(1)';
   }
 }));
 
