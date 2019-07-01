@@ -12,7 +12,7 @@ const multiply = (a, b) => {
 
 const divide = (a, b) => {
   if (b === 0) {
-    return "Error. Trying to divide by 0";
+    return "Error";
   } else {
     return a / b;
   }
@@ -71,6 +71,11 @@ let timer = null;
 numBtns.forEach(btn =>
   btn.addEventListener("click", function() {
     resultBtn.style.background = '#ffae17';
+    if (display.textContent === "Error") {
+      num1 = null;
+      num2 = null;
+      result = null;
+    }
     if (document.getElementsByClassName("show-result").length === 1) {
       display.textContent = "";
       display.classList.remove("show-result");
@@ -94,6 +99,7 @@ numBtns.forEach(btn =>
       if (num2 !== null) {
         result = operate(num1, num2);
         num1 = result;
+        document.querySelector('.running-total').textContent = result;
       }
     }, 1000);
   })

@@ -132,14 +132,22 @@ button:active {
     line-height: 21vh;
 }
 
-.operator-icon {
-    display: block;
-    height: 0%;
+.feedback {
+    display: flex;
     width: 100vw;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 1vh;
+}
+
+.running-total {
+    font-size: 2vh;
+}
+
+.operator-icon {
     font-size: 4vh;
-    text-align: left;
     left: 2vw;
-    align-content: center;
     position: fixed;
     color: #ffae17;
 }
