@@ -138,7 +138,7 @@ button:active {
 
 .operator-icon {
     display: block;
-    height: 5%;
+    height: 0%;
     width: 100vw;
     font-size: 4vh;
     text-align: left;
@@ -162,5 +162,5 @@ button:active {
 }
 
 .row-6 {
-    height: 15%;
+    height: 20%;
 }
