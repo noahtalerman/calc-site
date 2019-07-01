@@ -154,6 +154,16 @@ document.addEventListener('touchstart', function() {
     operateBtns.style.background = 'red';
     setTimeout(function() {
       operateBtns.style.background = "#ffae17";
-    }, 250)
+    }, 250);
   }
 })
+
+window.addEventListener('touchstart', function(e) {
+  if (document.querySelector('.num-btn').disabled == true) {
+    console.log(e);
+    operateBtns.forEach(btn => btn.style.background = 'red');
+    setTimeout(function() {
+      operateBtns.forEach(btn => btn.style.background = '#ffae17');
+    }, 250);
+  }
+});
