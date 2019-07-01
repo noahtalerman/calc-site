@@ -158,7 +158,7 @@ document.addEventListener('touchstart', function() {
   }
 })
 
-window.addEventListener('touchstart', function(e) {
+document.querySelector('.calculator').addEventListener('touchstart', function(e) {
   if (document.querySelector('.num-btn').disabled == true) {
     console.log(e);
     operateBtns.forEach(btn => btn.style.background = 'red');
