@@ -129,7 +129,7 @@ button:active {
 .display {
     display: block;
     width: 100vw;
-    height: 21%;
+    height: 100%;
     font-size: 15vh;
     text-align: right;
     align-content: center;
@@ -138,13 +138,14 @@ button:active {
 
 .operator-icon {
     display: block;
-    height: 100%;
+    height: 5%;
     width: 100vw;
     font-size: 4vh;
     text-align: left;
     left: 2vw;
     align-content: center;
     position: fixed;
+    color: #ffae17;
 }
 
 .row-1 {
