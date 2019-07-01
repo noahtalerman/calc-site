@@ -45,7 +45,14 @@ const disableBtns = () => {
     numBtns.forEach(btn => btn.style.color = 'red');
 }
 
-const disableOperateBtns = (activeBtn) => {
+const disableOperateBtns = () => {
+  operateBtns.forEach(btn => btn.disabled = true);
+  operateBtns.forEach(btn => btn.style.color = 'red');
+  resultBtn.disabled = true;
+  resultBtn.style.color = 'red';
+}
+
+const shiftOperateBtns = (activeBtn) => {
     operateBtns.forEach(btn => btn.style.color = '#fd8300');
     activeBtn.style.color = '#ffffff';
 }
@@ -55,14 +62,24 @@ const enableBtns = () => {
     numBtns.forEach(btn => btn.style.color = '#ffffff');
 }
 
+const enableOperateBtns = (activeBtn) => {
+  operateBtns.forEach(btn => btn.disabled = false);
+  operateBtns.forEach(btn => btn.style.color = '#fd8300');
+  activeBtn.style.color = '#ffffff';
+  resultBtn.disabled = false;
+  resultBtn.style.color = '#ffffff';
+}
+
 disableBtns();
 
+let activeBtn = undefined;
 operateBtns.forEach(btn =>
   btn.addEventListener("click", function() {
     resultBtn.style.background = '#ffae17';
     document.querySelector('.operator-icon').textContent = btn.textContent;
-    disableOperateBtns(btn);
+    shiftOperateBtns(btn);
     selectedOperation = btn.id;
+    activeBtn = btn;
     enableBtns();
   })
 );
@@ -101,6 +118,10 @@ numBtns.forEach(btn =>
         num1 = result;
         document.querySelector('.running-total').textContent = result;
       }
+      if (num1 === "Error" || result === "Error") {
+        disableBtns();
+        disableOperateBtns();
+      }
     }, 1000);
   })
 );
@@ -110,7 +131,7 @@ const showResult = () => {
   display.classList.add("show-result");
 };
 
-resultBtn = document.querySelector(".result-btn");
+const resultBtn = document.querySelector(".result-btn");
 resultBtn.addEventListener("click", function() {
   resultBtn.style.background = '#310063';
   showResult();
@@ -127,6 +148,10 @@ const clear = () => {
 document.querySelector('.clear-btn').addEventListener('click', function() {
     resultBtn.style.background = '#ffae17';
     clear();
+    if (resultBtn.disabled == true) {
+      enableBtns();
+      enableOperateBtns(activeBtn);
+    }
 })
 
 // touch events
@@ -172,7 +197,7 @@ document.addEventListener('touchstart', function() {
 })
 
 document.querySelector('.calculator').addEventListener('touchstart', function(e) {
-  if (document.querySelector('.num-btn').disabled == true) {
+  if (document.querySelector('.num-btn').disabled == true && document.querySelector('.operation-btn').disabled == false) {
     console.log(e);
     operateBtns.forEach(btn => btn.style.background = 'red');
     setTimeout(function() {
