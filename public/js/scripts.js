@@ -120,14 +120,10 @@ document.querySelector('.clear-btn').addEventListener('click', function() {
 
 // touch events
 numBtns.forEach(btn => btn.addEventListener('touchstart', function() {
-  if (btn.disabled === false) { 
+  if (btn.disabled == false) { 
     btn.style.background = '#310063';
     btn.style.color = '#ffed86';
     btn.style.transform = 'scale(0.80)';
-    operateBtns.background = 'red';
-    setTimeout(function() {
-      operateBtns.style.background = "#ffae17";
-    }, 250)
   } else {
     btn.style.background = '#0c0018';
     btn.style.color = 'red';
@@ -136,7 +132,7 @@ numBtns.forEach(btn => btn.addEventListener('touchstart', function() {
 }));
 
 numBtns.forEach(btn => btn.addEventListener('touchend', function() {
-  if (btn.disabled === false) {
+  if (btn.disabled == false) {
     btn.style.background = '#0c0018';
     btn.style.color = '#ffffff';
     btn.style.transform = 'scale(1)';
@@ -152,3 +148,12 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+window.addEventListener('touchstart', function() {
+  if (numBtns.disabled == true) {
+    operateBtns.background = 'red';
+    setTimeout(function() {
+      operateBtns.style.background = "#ffae17";
+    }, 250)
+  }
+})
