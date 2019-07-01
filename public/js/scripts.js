@@ -117,3 +117,17 @@ const clear = () => {
 document.querySelector('.clear-btn').addEventListener('click', function() {
     clear();
 })
+
+// touch events
+
+numBtns.forEach(btn => btn.addEventListener('ontouchstart', function() { 
+    btn.style.background = '#310063';
+    btn.style.color = '#ffed86';
+    btn.style.transform = 'scale(0.90)';
+}));
+
+numBtns.forEach(btn => btn.addEventListener('ontouchend', function() {
+    btn.style.background = '#0c0018';
+    btn.style.color = '#ffffff';
+    btn.style.transform = 'scale(1)';
+}));
