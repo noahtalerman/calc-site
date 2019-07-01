@@ -151,7 +151,7 @@ window.addEventListener('resize', () => {
 
 window.addEventListener('touchstart', function() {
   if (numBtns.disabled == true) {
-    operateBtns.background = 'red';
+    operateBtns.style.background = 'red';
     setTimeout(function() {
       operateBtns.style.background = "#ffae17";
     }, 250)
