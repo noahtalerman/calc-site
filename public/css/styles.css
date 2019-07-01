@@ -98,18 +98,18 @@ button.clear-btn {
     -moz-appearance: none;
 }
 
-button:active {
+/* button:active {
     background: #310063;
     color: #ffed86;
-}
+} */
 
 button:focus {
     outline: 0;
 }
 
-button:active {
+/* button:active {
     transform: scale(0.90);
-}
+} */
 
 .row {
     display: flex;

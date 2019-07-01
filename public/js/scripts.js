@@ -139,3 +139,8 @@ numBtns.forEach(btn => btn.addEventListener('touchend', function() {
 // viewport sizing
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+// resize event
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
