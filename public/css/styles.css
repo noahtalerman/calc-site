@@ -152,10 +152,15 @@ button:active {
     height: 20%;
 }
 
-.row-2, .row-3, .row-4 {
-    height: 20%;
+.row-2, .row-3, .row-4, .row-5 {
+    height: 15%;
 }
 
 .row-5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-6 {
     height: 15%;
 }
