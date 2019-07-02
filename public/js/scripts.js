@@ -1,20 +1,24 @@
+function round(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
 const add = (a, b) => {
-  return a + b;
+  return round(a + b);
 };
 
 const subtract = (a, b) => {
-  return a - b;
+  return round(a - b);
 };
 
 const multiply = (a, b) => {
-  return a * b;
+  return round(a * b);
 };
 
 const divide = (a, b) => {
   if (b === 0) {
     return "Error";
   } else {
-    return a / b;
+    return round(a / b);
   }
 };
 
