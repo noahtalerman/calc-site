@@ -3,22 +3,22 @@ function round(value, decimals) {
 }
 
 const add = (a, b) => {
-  return round(a + b);
+  return round((a + b), 5);
 };
 
 const subtract = (a, b) => {
-  return round(a - b);
+  return round((a - b), 5);
 };
 
 const multiply = (a, b) => {
-  return round(a * b);
+  return round((a * b), 5);
 };
 
 const divide = (a, b) => {
   if (b === 0) {
     return "Error";
   } else {
-    return round(a / b);
+    return round((a / b), 5);
   }
 };
 
