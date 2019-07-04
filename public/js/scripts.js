@@ -122,7 +122,7 @@ numBtns.forEach(btn =>
         num1 = result;
         document.querySelector('.running-total').textContent = result;
       }
-      if (num1 === "Error" || result === "Error") {
+      if (num1 === "Error" || result === "Error" || num1 === "NaN" || result === "NaN") {
         disableBtns();
         disableOperateBtns();
       }
