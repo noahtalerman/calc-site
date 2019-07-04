@@ -92,7 +92,7 @@ let timer = null;
 numBtns.forEach(btn =>
   btn.addEventListener("click", function() {
     resultBtn.style.background = '#ffae17';
-    if (display.textContent === "Error") {
+    if (display.textContent === "Error" || display.textContent === "NaN") {
       num1 = undefined;
       num2 = undefined;
       result = undefined;
