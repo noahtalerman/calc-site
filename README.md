@@ -9,4 +9,4 @@ designed by Noah Talerman
 front end development by Noah Talerman
 back end development by Heroku
 hosted on Heroku
-[CLICK HERE](https//:ez-calc.herokuapp.com/) to open the web app on your mobile browser.
+[CLICK HERE](https://ez-calc.herokuapp.com/) to open the web app on your mobile browser.
