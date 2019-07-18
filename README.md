@@ -1,5 +1,5 @@
 # operation-calculator
-This calculator requires the user to select the operation they would like to use BEFORE selected the numbers they want to operate on. This app performs the best on mobile browsers.
+This calculator requires the user to select the operation they would like to use BEFORE selecting the numbers they want to operate on. This app performs the best on mobile browsers.
  <br>
  <br>
 This calculator is ideal for calculations that involve a long string of the same operation such as "1 + 2 + 3 + 4 + 5 + 6 +..."
