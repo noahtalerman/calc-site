@@ -1,4 +1,5 @@
 # operation-calculator
+![Image of pixxel-art favicon](/public/images/fav-6.png)
 This calculator requires the user to select the operation they would like to use BEFORE selecting the numbers they want to operate on. This app performs the best on mobile browsers.
  <br>
  <br>
