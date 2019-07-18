@@ -1,4 +1,4 @@
-# operation-calculator ![Image of ez-calc favicon](/public/images/fav-6.png)
+# operation-calculator [![Image of ez-calc favicon](/public/images/fav-6.png)](https://ez-calc.herokuapp.com/)
 This calculator requires the user to select the operation they would like to use BEFORE selecting the numbers they want to operate on. This app performs the best on mobile browsers.
  <br>
  <br>
