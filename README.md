@@ -9,6 +9,6 @@ Instead of continuously having to select the "+" button in between each number, 
 
 designed by Noah Talerman <br>
 front end development by Noah Talerman <br>
-back end development by Heroku <br>
+back end development by Noah Talerman with help of Heroku <br>
 hosted on Heroku <br>
 [CLICK HERE](https://ez-calc.herokuapp.com/) to open the web app on your mobile browser.
